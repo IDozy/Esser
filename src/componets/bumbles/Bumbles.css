@@ -1,0 +1,46 @@
+
+.bumbles__section{
+width: 100%;
+height: 100vh;
+overflow: hidden;
+background: rgb(71, 184, 226);
+position: absolute;
+display: flex;
+justify-content: center;
+align-items: center;
+top: 0;
+z-index: -1;
+}
+.bumbles__section span{
+    position: absolute;
+    bottom: -50px;
+    background: transparent;
+    border-radius: 50%;
+    pointer-events: none;
+    box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.5);
+    animation: animate 4s linear infinite;
+}
+.bumbles__section span::before{
+   content: "";
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   transform: scale(.25) translate(-70%, -70%);
+   background: radial-gradient(#fff , transparent);
+   border-radius: 50%;
+}
+
+@keyframes animate{
+    0%{
+        transform: translateY(0%);
+        opacity: 1;
+    }
+    99%{
+        
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(-1200%);
+        opacity: 0;
+    }
+}

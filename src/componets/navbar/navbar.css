@@ -1,0 +1,139 @@
+.nav__container {
+  position: relative;
+}
+
+header {
+  margin: 2rem;
+  top: 10px;
+  height: 80px;
+  background: #013953;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 100px;
+  z-index: 100;
+  border-radius: 50px;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: #fff;
+}
+.hamburger,
+.toggle {
+  display: none;
+}
+
+.nav-bar ul {
+  display: flex;
+  list-style: none;
+}
+
+.nav-bar ul li a {
+  display: block;
+  color: #fff;
+  font-size: 20px;
+  padding: 10px 25px;
+  border-radius: 50px;
+  transition: 0.2s;
+  margin: 0 5px;
+  text-decoration: none;
+}
+
+.nav-bar ul li a:active {
+  color: green;
+}
+
+@media only screen and (max-width: 1320px) {
+  header {
+    padding: 0 50px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  header {
+    padding: 0 30px;
+    margin: 0;
+    border-radius: 0;
+    background: #013953;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .hamburger,
+  .toggle {
+    display: block;
+    cursor: pointer;
+  }
+
+  .nav__container {
+    position: fixed;
+    width: 100%;
+    top: 0;
+  }
+  .header {
+    border-radius: 0%;
+    margin: 0;
+  }
+
+  .nav-bar {
+    height: 0;
+    position: absolute;
+    top: 90px;
+    /* left: 0;
+    right: 0;*/
+    width: 89vw !important;
+    background: #013953;
+    transition: 0.5s;
+    overflow: hidden;
+    z-index: 2;
+    padding: 0 15px;
+  }
+  .nav-bar.active {
+    height: 270px;
+  }
+  .nav-bar ul {
+    display: block;
+    width: fit-content;
+    margin: 1rem auto 0 auto;
+    text-align: center;
+    transition: 0.5s;
+    opacity: 0;
+    padding: 0;
+  }
+
+  .nav-bar.active ul {
+    opacity: 1;
+  }
+  .nav-bar ul li a {
+    margin-bottom: 12px;
+  }
+
+  .toggle div:nth-child(1) {
+    transform: rotate(-45deg) translate(-8px, 5px);
+  }
+  .toggle div:nth-child(2) {
+    opacity: 0;
+  }
+  .toggle div:nth-child(3) {
+    transform: rotate(45deg) translate(-8px, -5px);
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .nav-bar {
+    left: 0;
+    right: 0;
+    width: 100% !important;
+    padding: 0;
+  }
+}
+.hamburger div,
+.toggle div {
+  width: 30px;
+  height: 3px;
+  background: #fff;
+  margin: 6px 0;
+  transition: 0.4s;
+}
