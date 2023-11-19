@@ -3,7 +3,7 @@
 width: 100%;
 height: 100vh;
 overflow: hidden;
-background: rgb(71, 184, 226);
+background:#fff;
 position: absolute;
 display: flex;
 justify-content: center;
@@ -17,7 +17,7 @@ z-index: -1;
     background: transparent;
     border-radius: 50%;
     pointer-events: none;
-    box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.5);
+    box-shadow: inset 0 0 10px rgba(114, 219, 225, 0.5);
     animation: animate 4s linear infinite;
 }
 .bumbles__section span::before{

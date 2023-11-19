@@ -1,25 +1,29 @@
-.container__info {
+.container__wave {
   display: flex;
-  height: 50%;
+  height: 20vh;
+  left: 50%;
+
   background: #fff;
   align-items: center;
   justify-content: center;
-  margin-top: 10rem;
+  z-index: -1;
+ 
+  position: fixed;
 }
 .info__text {
-  font-size: 7rem;
+  width: 20rem;
   position: absolute;
 }
 
 .border {
-  color: #fff;
+  background-color: #fff;
   text-shadow: -1px -1px 0 white, 1px -1px 0 white, 1px 1px 0 white,
     -1px 1px 0 white;
 }
 
 .wave {
-  color: #09f;
-  animation: wave 3s ease-in-out infinite;
+  background: #09f;
+  animation: wave 5s ease-in-out infinite;
 }
 
 @keyframes wave {

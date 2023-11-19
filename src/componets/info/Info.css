@@ -1,0 +1,34 @@
+.container{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 20px;
+ 
+    margin-top: 5%;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+      flex-direction: column; /* Cambia a diseño de columna */
+      align-items: center;
+    }
+  
+    .image-section {
+      margin-left: 0; /* Elimina el espacio entre el texto y la imagen en pantallas pequeñas */
+      margin-top: 20px; /* Agrega espacio arriba de la imagen */
+    }
+  }
+
+  
+.card {
+    flex: 2 1;
+}
+
+
+.img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}

@@ -1,14 +1,15 @@
 import React from 'react'
 import Navbar from "../componets/navbar/Navbar"
-import Info from "../componets/info/Info"
+import Wave from "../componets/wave/Wave"
 import Bumbles from '../componets/bumbles/Bumbles'
-import InfoPrincipal from '../componets/infoPrincipal/InfoPrincipal'
+import Info from '../componets/info/Info'
+
 const Home = () => {
   return (
     <div>
       <Navbar/>
       <Bumbles/>
-      <InfoPrincipal/>
+      <Wave/>
       <Info/>
     </div>
   )
